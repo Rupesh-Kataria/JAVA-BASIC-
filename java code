@@ -1,0 +1,67 @@
+import java.util.Scanner;
+public class FirstJavaClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//System.out.println("Anuj");
+//		int marks=18;
+//		float averageMarks=19.345f;
+//		long big=98949939499493939l;
+//		System.out.println(averageMarks);
+//		int firstNumber=123;
+//		int secondNumber=234;
+//		double sum=(double)firstNumber/secondNumber;
+//		System.out.println(sum);
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("Enter your name");
+//		int age=sc.nextInt();
+//		float age=sc.nextFloat();
+//		String name=sc.nextLine();
+//		System.out.println(name);
+//		char grade='A';
+//		switch(grade)
+//		{
+//		case 'A':
+//			System.out.println("your grade good");
+//			break;
+//		case 'B':
+//			System.out.println("very good,keep learning");
+//			break;
+//		default:
+//			System.out.println("wrong argument");
+//		}
+		for(int i=0;i<5;i++)
+			System.out.println("Rupesh");
+//		int marks[]=new int[5];
+//		marks[0]=12;
+//		marks[1]=13;
+//		marks[2]=14;
+//		marks[3]=15;
+//		marks[4]=16;
+		int marks[]= {23,12,56,34,99};
+		for(int i=0;i<marks.length;i++)
+	    	 System.out.println(marks[i]);
+		try {
+			System.out.println(2/0);
+			System.out.println(marks[6]);
+			
+		}
+		catch(ArrayIndexOutOfBoundsException e)
+		{
+			System.out.println("Error aaya tha");
+			System.out.println(e.getLocalizedMessage());
+		}
+		catch(Exception e)
+		{
+			System.out.println(e.getLocalizedMessage());
+		}
+		System.out.println(average(4,4));	
+		
+	}
+	static int average(int firstNumber,int secondNumber)
+	{
+		int sum =firstNumber+secondNumber;
+		return sum/2;
+	}
+
+}
